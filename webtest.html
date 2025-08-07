@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <meta charset="utf-8"> 
+    <link rel="stylesheet" href="webstyle.css">
+    <title>web端上位机</title>
+</head>
+<body>
+    <h1>搭建数据传输框架</h1>
+    
+    <form id="dataForm">
+        请输入任何数据：<input type="text" id="dataInput" name="data" required style="margin-bottom: 20px;"><br>  
+        <input type="button" class="button" value="提交" onclick="submitForm()">
+    </form>
+    <p>
+        您输入的数据将会在Qt端显示<br>
+        您输入的数据会在此显示：<span id="output"></span><br>
+        Qt端回传数据：<span id="outputQt"></span>
+    </p>
+<div id="statusBar" class="status-bar" style="display: none;"></div>
+    <script src="Webjavascript1.js"></script>
+</body>
+</html>
